@@ -1,0 +1,2952 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Thai", serif;
+
+    background: #080808;
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   COLOR
+================================================== */
+
+:root {
+
+    --black: #080808;
+    --black2: #111111;
+    --dark: #171717;
+
+    --gold: #d4af37;
+    --gold-light: #f0cf62;
+
+    --white: #eeeeee;
+    --gray: #999999;
+
+    --border: #333333;
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+
+    height: 72px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: #050505;
+
+    border-bottom:
+        1px solid #292929;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: var(--gold);
+
+    letter-spacing: 2px;
+
+     margin-right: auto;
+}
+
+.logo img {
+    width: 120px;
+
+    height: auto;
+
+    display: block;
+}
+
+.menu {
+
+    display: flex;
+
+    gap: 30px;
+
+    flex: 1;
+}
+
+.menu a {
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+.menu a:hover {
+
+    color: var(--gold);
+}
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.login-btn {
+
+    background: var(--gold);
+
+    color: #080808;
+
+    border: none;
+
+    border-radius: 3px;
+
+    padding: 7px 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.cart-btn {
+
+    background: none;
+
+    color: var(--gold);
+
+    border: none;
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+
+    width: 85%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    background: #030303;
+
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 60px 70px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   HERO CONTENT
+================================================== */
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* ==================================================
+   LEFT : HERO TEXT
+================================================== */
+
+.hero-text {
+
+    max-width: 620px;
+
+    text-align: left;
+
+    padding-left: 10px;
+}
+
+
+/* Category */
+
+.hero-category {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 22px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.hero-text h1 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Chonburi", serif;
+
+    font-size: clamp(40px, 4.5vw, 64px);
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+
+    white-space: nowrap;
+}
+
+.hero-text h1 span {
+
+    color: var(--gold);
+}
+
+
+/* Subtitle */
+
+.hero-text h2 {
+
+    margin: 15px 0 20px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: 500;
+}
+
+
+/* ==================================================
+   BOOK INFORMATION
+================================================== */
+
+.hero-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    max-width: 560px;
+}
+
+
+/* Author */
+
+.hero-author {
+
+    margin-top: 14px;
+
+    color: #c9a227;
+
+    font-size: 11px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==================================================
+   QUOTE
+================================================== */
+
+.hero-quote {
+
+    position: relative;
+
+    margin-top: 28px;
+
+    padding: 18px 25px 16px 32px;
+
+    max-width: 560px;
+
+    border-left: 3px solid var(--gold);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(197, 157, 52, 0.07),
+            transparent
+        );
+}
+
+.quote-mark {
+
+    position: absolute;
+
+    left: 8px;
+
+    top: 6px;
+
+    color: var(--gold);
+
+    font-size: 25px;
+
+    font-family: Georgia, serif;
+}
+
+.hero-quote p {
+
+    margin: 0 0 8px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    font-weight: 500;
+}
+
+.hero-quote small {
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.hero-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+.hero-btn {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 20px;
+
+    color: var(--gold);
+
+    background: transparent;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+
+    background: var(--gold);
+
+    color: #000;
+}
+
+
+/* ==================================================
+   RIGHT : 360 BOOK
+================================================== */
+
+.hero-book {
+
+    min-height: 420px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* แสง/วงกลมด้านหลังหนังสือ */
+
+.blood-circle {
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(100, 0, 0, 0.18),
+            transparent 68%
+        );
+
+    filter: blur(20px);
+
+    z-index: 0;
+}
+
+
+/* ==================================================
+   360 BOOK
+================================================== */
+
+.book360 {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 380px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 1;
+
+    cursor: grab;
+
+    user-select: none;
+}
+
+.book360:active {
+
+    cursor: grabbing;
+}
+
+
+#book360Image {
+
+    width: min(380px, 85%);
+
+    max-height: 370px;
+
+    object-fit: contain;
+
+    display: block;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    filter:
+        drop-shadow(
+            0 30px 30px rgba(0, 0, 0, 0.8)
+        );
+}
+
+
+/* ==================================================
+   ROTATE TEXT
+================================================== */
+.rotate-text {
+    order: -1;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    color: #777;
+
+    font-size: 12px;
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   ROTATE BUTTONS
+================================================== */
+
+.rotate-buttons {
+    margin-top: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+.rotate-buttons button {
+    width: 30px;
+    height: 30px;
+
+    font-size: 9px;
+
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--gold);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.rotate-buttons button:hover {
+
+    background: var(--gold);
+
+    color: #000;
+}
+
+.rotate-buttons span {
+    min-width: 30px;
+
+    text-align: center;
+
+    color: var(--gold);
+
+    font-size: 9px;
+}
+
+/* BOOK 360 */
+
+.hero-book {
+
+    position: relative;
+
+    text-align: center;
+}
+
+.blood-circle {
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.14),
+            transparent 65%
+        );
+}
+
+.book360 {
+
+    width: 420px;
+
+    height: 400px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: grab;
+
+    position: relative;
+
+    z-index: 2;
+
+    user-select: none;
+}
+
+.book360:active {
+
+    cursor: grabbing;
+}
+
+.book360 img {
+
+    max-width: 80%;
+
+    max-height: 90%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+    filter:
+        drop-shadow(
+            0 25px 20px
+            rgba(0,0,0,.8)
+        );
+}
+
+/* ==================================================
+   SECTION GENERAL
+================================================== */
+
+section {
+
+    padding: 60px 30px;
+}
+
+.section-heading {
+
+    max-width: 1100px;
+
+    margin:
+        0 auto 35px;
+}
+
+.section-heading.center {
+
+    text-align: center;
+}
+
+.section-heading span {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+
+    font-size: 29px;
+
+    margin-top: 7px;
+}
+
+.section-heading p {
+
+    color: #888;
+
+    font-size: 13px;
+
+    max-width: 600px;
+
+    margin-top: 8px;
+}
+
+
+/* ==================================================
+   PURCHASE
+================================================== */
+
+.purchase-section {
+    background-image:
+        linear-gradient(
+            rgba(7, 10, 13, 0.60),
+            rgba(7, 10, 13, 0.60)
+        ),
+        url("../images/back3.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.purchase-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 45px;
+}
+
+
+/* IMAGE */
+
+.main-image-container {
+
+    height: 390px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #151515;
+
+    border:
+        1px solid #292929;
+
+    overflow: hidden;
+}
+
+.main-product-image {
+
+    max-width: 80%;
+
+    max-height: 85%;
+
+    object-fit: contain;
+
+    cursor: zoom-in;
+
+    transition: .3s;
+}
+
+.main-product-image:hover {
+
+    transform: scale(1.03);
+}
+
+.gallery-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    width: 38px;
+
+    height: 38px;
+
+    border:
+        1px solid #555;
+
+    background: rgba(0,0,0,.7);
+
+    color: var(--gold);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.gallery-arrow.left {
+
+    left: 12px;
+}
+
+.gallery-arrow.right {
+
+    right: 12px;
+}
+
+.zoom-button {
+
+    position: absolute;
+
+    bottom: 12px;
+
+    right: 12px;
+
+    width: 38px;
+
+    height: 38px;
+
+    background: var(--gold);
+
+    color: #000;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* THUMBNAILS */
+
+.thumbnail-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.thumbnail-list {
+
+    display: flex;
+
+    gap: 12px;
+
+    overflow: hidden;
+
+    flex: 1;
+}
+
+.thumbnail {
+
+    width: 82px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    background: #181818;
+
+    border:
+        1px solid #333;
+
+    padding: 3px;
+
+    cursor: pointer;
+}
+
+.thumbnail.active {
+
+    border:
+        2px solid var(--gold);
+}
+
+.thumbnail-arrow {
+
+    background: none;
+
+    border: none;
+
+    color: var(--gold);
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* ORDER */
+
+.warning-title {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+.warning-symbol {
+
+    color: var(--gold);
+
+    font-size: 35px;
+}
+
+.warning-title h2 {
+
+    color: var(--gold);
+
+    font-size: 24px;
+}
+
+.warning-title p {
+
+    color: #ddd;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.order-card {
+
+    border:
+        1px solid #555;
+
+    background: #111;
+
+    padding: 20px;
+
+    position: relative;
+}
+
+.limited {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.order-card > p {
+
+    font-size: 14px;
+
+    color: #ccc;
+}
+
+.price {
+
+    color: #f90939ee;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    margin-top: 4px;
+}
+
+.old-price {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 2px;
+
+    margin-bottom: 18px;
+}
+
+.old-price span {
+
+    font-weight: bold;
+
+    color: #ddd;
+}
+
+.old-price del {
+
+    color: #777;
+}
+
+.buy-button {
+
+    width: 100%;
+
+    height: 52px;
+
+    background: var(--gold);
+
+    color: #080808;
+
+    border: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.buy-button:hover {
+
+    background: var(--gold-light);
+
+    box-shadow:
+        0 0 20px
+        rgba(212,175,55,.25);
+}
+
+.shipping {
+
+    margin-top: 12px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+   AUDIO
+================================================== */
+
+.audio-section {
+
+    background: #080808;
+
+     padding: 55px 30px;
+}
+
+.audio-slider {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.audio-card-wrapper {
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+    flex: 1;
+}
+
+.audio-card {
+
+    min-width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        40% 60%;
+
+    background: #131313;
+
+    border:
+        1px solid #333;
+
+    padding: 12px;
+
+    transition: .3s;
+}
+
+.audio-image {
+
+    height: 260px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.audio-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: none;
+      
+}
+
+.audio-info {
+    padding: 25px;
+    flex: 1;
+    min-width: 0;
+}
+
+.audio-info audio {
+    width: 100%;
+    display: block;
+}
+
+
+.audio-info > span {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.audio-info h3 {
+
+    font-size: 25px;
+
+    margin-top: 8px;
+}
+
+.audio-info p {
+
+    color: #888;
+
+    font-size: 13px;
+
+    margin: 10px 0 20px;
+}
+
+.audio-info audio {
+
+    width: 100%;
+}
+
+.audio-arrow {
+
+    width: 40px;
+
+    height: 40px;
+
+    border:
+        1px solid var(--gold);
+
+    color: var(--gold);
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   SUITABLE
+================================================== */
+
+.suitable-section {
+    background: transparent;
+    padding: 45px 30px;
+}
+
+
+.suitable-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.suitable-card {
+
+    min-height: 145px;
+
+    border:
+        1px solid #333;
+
+    background: #111;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    transition:
+        .35s;
+}
+
+.suitable-number {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.suitable-title {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: 35px;
+}
+
+.suitable-detail {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 18px;
+
+    background:
+        rgba(212,175,55,.96);
+
+    color: #080808;
+
+    transform:
+        translateY(100%);
+
+    transition:
+        .35s;
+}
+
+.suitable-detail h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.suitable-detail p {
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+.suitable-card:hover {
+
+    border-color:
+        var(--gold);
+
+    transform:
+        translateY(-5px);
+}
+
+.suitable-card:hover
+.suitable-detail {
+
+    transform:
+        translateY(0);
+}
+
+/* ==================================================
+   พื้นหลังส่วนที่ 2 และ 3
+================================================== */
+
+.story-background {
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(7, 10, 13, 0.62),
+            rgba(7, 10, 13, 0.62)
+        ),
+        url("../images/back2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.audio-section,
+.suitable-section {
+    background: transparent;
+}
+
+.listen-section,
+.who-section {
+    background: transparent;
+}
+
+
+/* ========================================
+   ตกแต่ง Section 03
+======================================== */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span {
+    display: block;
+
+    color: #d4af37;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(28px, 3vw, 46px);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+/* ========================================
+   ตกแต่งการ์ด 5 ใบ Section 03
+======================================== */
+
+.who-section {
+    padding: 100px 7% 120px;
+}
+
+
+/* กล่องรวมการ์ด */
+
+.target-cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* การ์ด */
+
+.target-card {
+    position: relative;
+
+    min-height: 240px;
+
+    padding: 20px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(20, 20, 20, 0.82),
+            rgba(12, 12, 12, 0.95)
+        );
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* ลวดลายวงกลมด้านบน */
+
+.target-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    top: -40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,0.12),
+            transparent 65%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Hover */
+
+.target-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,0.18);
+}
+
+/* ========================================
+   ตกแต่งไอคอน Section 03
+======================================== */
+.card-icon {
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+
+    filter:
+        grayscale(20%)
+        sepia(30%);
+
+    opacity: 0.95;
+}
+
+/* ========================================
+   ตกแต่งเลข Section 03
+======================================== */
+
+.card-number {
+     display: none;
+}
+
+
+
+
+/* ==================================================
+   BIBLIOGRAPHY บรรณานุกรม
+================================================== */
+
+.bibliography-section {
+
+    background: #101010;
+
+    border-top:
+        1px solid #292929;
+}
+
+.bibliography-inner {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        35% 65%;
+
+    gap: 60px;
+}
+
+.bibliography-title span {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.bibliography-title h2 {
+
+    font-size: 29px;
+
+    margin: 10px 0;
+}
+
+.bibliography-title p {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.bibliography-data {
+
+    border-top:
+        1px solid #444;
+}
+
+.data-row {
+
+    display: grid;
+
+    grid-template-columns:
+        35% 65%;
+
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid #292929;
+
+    font-size: 13px;
+}
+
+.data-row span {
+
+    color: #777;
+}
+
+.data-row strong {
+
+    color: #ddd;
+
+    font-weight: normal;
+}
+
+/*รูปภาพ*/
+.back-cover {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 30px auto 0;
+}
+
+/* ==================================================
+   HIGHLIGHTS
+================================================== */
+
+.highlights-section {
+
+    background: #080808;
+}
+
+.highlight-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 15px;
+}
+
+.highlight-card {
+
+    background: #111;
+
+    border:
+        1px solid #333;
+
+    padding: 25px;
+
+    min-height: 190px;
+
+    transition: .3s;
+}
+
+.highlight-card:hover {
+
+    border-color: var(--gold);
+
+    transform:
+        translateY(-5px);
+}
+
+.highlight-card span {
+
+    color: var(--gold);
+
+    font-size: 20px;
+}
+
+.highlight-card h3 {
+
+    font-size: 17px;
+
+    margin:
+        20px 0 10px;
+}
+
+.highlight-card p {
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+.footer {
+
+    background: #030303;
+
+    border-top:
+        1px solid #292929;
+
+    padding:
+        45px 30px 20px;
+}
+
+
+.footer-main {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+/* Logo */
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo img {
+
+    width: 180px;
+
+    height: auto;
+
+    display: block;
+}
+
+.footer-logo p {
+
+    color: #666;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+}
+
+
+/* Follow Us */
+.footer-social {
+
+    text-align: right;
+
+    justify-self: end;
+}
+
+.footer-social span {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.footer-social div {
+
+    margin-top: 10px;
+
+    word-spacing: 10px;
+
+    color: #777;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid #222;
+
+    display: flex;
+
+    gap: 30px;
+
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+
+/* ==================================================
+   MODAL
+================================================== */
+
+.image-modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 999;
+
+    background:
+        rgba(0,0,0,.92);
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.image-modal.show {
+
+    display: flex;
+}
+
+.image-modal img {
+
+    max-width: 85vw;
+
+    max-height: 85vh;
+
+    object-fit: contain;
+}
+
+.modal-close {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:900px) {
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-text p {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-tags {
+
+        justify-content: center;
+    }
+
+    .purchase-content {
+
+        grid-template-columns: 1fr;
+    }
+
+    .suitable-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .bibliography-inner {
+
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-main {
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .menu {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 30px;
+    }
+
+    .hero-text h2 {
+
+        font-size: 21px;
+    }
+
+    .audio-card {
+
+        grid-template-columns: 1fr;
+    }
+
+    .audio-image {
+
+        height: 200px;
+    }
+
+    .suitable-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================================================
+   IMAGE ZOOM
+========================================================= */
+
+#imageZoomOverlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 40px;
+
+    cursor: zoom-out;
+}
+
+
+#imageZoomOverlay.show {
+    display: flex;
+}
+
+
+#zoomedProductImage {
+    max-width: 90vw;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    cursor: default;
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+
+.close-zoom {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 10000;
+}
+
+
+.close-zoom:hover {
+    color: #d8af37;
+}
+
+/* =========================================================
+   AUDIO SLIDER FIX
+========================================================= */
+
+.audio-slider {
+    position: relative;
+}
+
+
+/* ปุ่มลูกศร Audio */
+
+.audio-arrow {
+    position: relative;
+    z-index: 20;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+}
+
+
+/* การ์ด Audio */
+
+.audio-card {
+    width: 100%;
+}
+
+/* =========================================================
+   ซ่อนเรื่องที่ไม่ได้เลือก
+========================================================= */
+
+
+.audio-card:not(.active-audio) {
+    display: none;
+}
+
+.book360 {
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.book360.dragging {
+    cursor: grabbing;
+}
+
+.book360 img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.footer-social .social-icons a {
+    color: var(--gold);
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/*เพื่อไม่ให้ Hero แตกเมื่อเปิดบนมือถือ*/
+@media (max-width: 900px) {
+
+    .hero-section {
+
+        padding: 60px 25px;
+    }
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .hero-text {
+
+        max-width: 700px;
+
+        margin: auto;
+
+        text-align: center;
+
+        padding-left: 0;
+    }
+
+    .hero-info {
+
+        margin: auto;
+    }
+
+    .hero-quote {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .hero-actions {
+
+        justify-content: center;
+    }
+
+    .hero-book {
+
+        min-height: 430px;
+    }
+
+    .book360 {
+
+        height: 380px;
+    }
+
+    #book360Image {
+
+        max-height: 370px;
+    }
+
+}
+
+/* =========================================================
+   เพิ่ม Media Query เพื่อให้ความแตกต่างยังเห็นอยู่ แต่ไม่ทำให้ Hero ใหญ่เกินไป
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-section {
+        width: 90%;
+        padding: 40px 30px;
+    }
+
+    .book-section {
+        width: 82%;
+    }
+
+}
+
+/*มือถือ:*/
+@media (max-width: 600px) {
+
+    .hero-section {
+        width: 94%;
+        padding: 35px 20px;
+    }
+
+    .book-section {
+        width: 88%;
+    }
+
+}
+
+/* ขนาดข้อความการ์ด เหมาะกับใคร*/
+.target-card h3 {
+    font-size: 20px;
+    margin: 8px 0 8px;
+    color: #d4af37;
+}
+
+.target-card p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* ผีลอย */
+.floating-ghost {
+    position: fixed;
+    width: 120px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0.85;
+    animation: ghostFloat 4s ease-in-out infinite;
+}
+
+.ghost-left {
+    right: 20px;
+    left: auto;
+    top: 35%;
+}
+
+@keyframes ghostFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(3deg);
+    }
+}
+
+
+/* =========================================================
+   HORROR BOOK FONT
+   ========================================================= */
+
+/* -------------------------
+   CINZEL
+   หัวเรื่อง / หัวข้อใหญ่
+------------------------- */
+
+.hero-text h1,
+.section-heading h2,
+.bibliography-title h2,
+.warning-title h2,
+.price {
+    font-family: "Cinzel", "Noto Serif Thai", serif;
+    font-weight: 700;
+}
+
+
+/* -------------------------
+   NOTO SERIF THAI
+   เนื้อหาภาษาไทย
+------------------------- */
+
+.hero-text h2,
+.hero-info,
+.hero-author,
+.hero-quote p,
+.hero-quote small,
+.section-heading p,
+.warning-title p,
+.order-card > p,
+.shipping,
+.audio-info h3,
+.audio-info p,
+.target-card h3,
+.target-card p,
+.bibliography-title p,
+.data-row,
+.highlight-card h3,
+.highlight-card p,
+.footer-logo p,
+.footer-bottom {
+    font-family: "Noto Serif Thai", serif;
+}
+
+
+/* -------------------------
+   SRIRACHA
+   คำพูด / Quote
+------------------------- */
+
+.hero-quote p,
+.hero-quote small {
+    font-family: "Sriracha", cursive;
+}
+
+
+/* -------------------------
+   SPECIAL ELITE
+   Label แบบเครื่องพิมพ์ดีด
+------------------------- */
+
+.hero-category,
+.hero-tag,
+.section-heading span,
+.audio-info > span,
+.limited,
+.footer-social span,
+.rotate-text,
+.rotate-buttons span {
+    font-family: "Special Elite", monospace;
+}
+
+
+/* -------------------------
+   MENU
+------------------------- */
+
+.logo,
+.menu a,
+.login-btn {
+    font-family: "Cinzel", "Noto Serif Thai", serif;
+}
+
+
+/* -------------------------
+   BUTTON
+------------------------- */
+
+.hero-btn,
+.buy-button {
+    font-family: "Noto Serif Thai", serif;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   จัดวาง HERO — DARK CINEMATIC BOOK LAYOUT
+   ปรับให้ Hero แน่นขึ้นและลดพื้นที่ว่าง
+   ========================================================= */
+
+.hero-section {
+    width: 92%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 45px 55px 38px;
+
+    min-height: 0;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 78% 45%,
+            rgba(212, 175, 55, 0.07),
+            transparent 30%
+        ),
+        #030303;
+
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(380px, 0.85fr);
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   HERO TEXT
+   ========================================================= */
+
+.hero-text {
+
+    max-width: 680px;
+
+    padding-left: 5px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.hero-category {
+
+    margin-bottom: 16px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HORROR TAG
+   ========================================================= */
+
+.hero-tag {
+
+    padding: 7px 13px;
+
+    margin-bottom: 45px;
+
+    display: inline-block;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #c9a227;
+
+    background: rgba(212,175,55,.05);
+
+    border: 1px solid rgba(212,175,55,.28);
+
+    position: relative;
+}
+
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.hero-text h1 {
+
+    margin: 0;
+
+    max-width: 700px;
+
+    color: #fff;
+
+    font-size: clamp(42px, 4.1vw, 62px);
+
+    line-height: 1.02;
+
+    letter-spacing: -1px;
+
+    font-weight: 700;
+}
+
+
+/* คำว่า 3,000 */
+
+.hero-text h1 span {
+
+    color: var(--gold);
+
+    display: inline-block;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.hero-text h2 {
+
+    margin: 17px 0 15px;
+
+    max-width: 650px;
+
+    color: #e5e5e5;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   AUTHOR
+   ========================================================= */
+
+.hero-author {
+
+    margin-top: 8px;
+
+    color: #b89632;
+
+    font-size: 11px;
+
+    letter-spacing: .5px;
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.hero-quote {
+
+    margin-top: 22px;
+
+    max-width: 600px;
+
+    padding: 17px 22px 15px 30px;
+
+    border-left: 2px solid var(--gold);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(212,175,55,.08),
+            rgba(212,175,55,.015),
+            transparent
+        );
+
+    position: relative;
+}
+
+
+/* =========================================================
+   QUOTE TEXT
+   ========================================================= */
+
+.hero-quote p {
+
+    margin: 0 0 7px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.hero-quote small {
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   BOOK AREA
+   ========================================================= */
+
+.hero-book {
+
+    min-height: 390px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   GOLD GLOW BEHIND BOOK
+   ========================================================= */
+
+.blood-circle {
+
+    width: 390px;
+    height: 390px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.16),
+            rgba(120,0,0,.05) 42%,
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   BOOK 360
+   ========================================================= */
+
+.book360 {
+
+    width: 450px;
+
+    height: 355px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+
+    cursor: grab;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   BOOK IMAGE
+   ========================================================= */
+
+.book360 img,
+#book360Image {
+
+    width: min(390px, 90%);
+
+    max-width: 390px;
+
+    max-height: 350px;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 28px 25px rgba(0,0,0,.9)
+        );
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+}
+
+
+/* Hover ให้หนังสือเด่นขึ้น */
+
+.book360:hover img,
+.book360:hover #book360Image {
+
+    transform: translateY(-5px) scale(1.025);
+
+    filter:
+        drop-shadow(
+            0 32px 30px rgba(0,0,0,.95)
+        );
+}
+
+
+/* =========================================================
+   DECORATIVE LINE
+   ========================================================= */
+
+.hero-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 1px;
+
+    right: 7%;
+    bottom: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(212,175,55,.55),
+            transparent
+        );
+
+    opacity: .6;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-section {
+
+        width: 94%;
+
+        padding: 40px 35px;
+    }
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .hero-text {
+
+        max-width: 700px;
+
+        margin: auto;
+
+        text-align: center;
+    }
+
+    .hero-text h1,
+    .hero-text h2 {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-author {
+
+        text-align: center;
+    }
+
+    .hero-quote {
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .hero-book {
+
+        min-height: 350px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero-section {
+
+        width: 96%;
+
+        padding: 32px 18px 25px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 34px;
+
+        line-height: 1.08;
+    }
+
+    .hero-text h2 {
+
+        font-size: 18px;
+    }
+
+    .hero-book {
+
+        min-height: 320px;
+    }
+
+    .book360 {
+
+        height: 300px;
+    }
+
+    .book360 img,
+    #book360Image {
+
+        max-height: 285px;
+    }
+
+    .blood-circle {
+
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/* =========================================================
+   HERO — BOOK PREVIEW
+   ========================================================= */
+
+.hero-book-preview {
+
+    position: absolute;
+
+    left: 54%;
+
+    top: 70%;
+
+    transform: translate(-50%, -50%);
+
+    width: 180px;
+
+    z-index: 1;
+
+    text-align: left;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.preview-label {
+
+    font-family: "Special Elite", monospace;
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   LINE
+   ========================================================= */
+
+.preview-line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--gold),
+            rgba(212,175,55,.15),
+            transparent
+        );
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+.preview-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   EACH ITEM
+   ========================================================= */
+
+.preview-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding-bottom: 9px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.07);
+
+    transition: .3s;
+}
+
+
+/* NUMBER */
+
+.preview-item span {
+
+    font-family: "Cinzel", serif;
+
+    color: #8c7225;
+
+    font-size: 10px;
+
+    min-width: 20px;
+}
+
+
+/* TEXT */
+
+.preview-item p {
+
+    margin: 0;
+
+    font-family: "Special Elite", monospace;
+
+    color: #888;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.preview-item:hover p {
+
+    color: var(--gold);
+}
+
+.preview-item:hover span {
+
+    color: #fff;
+}
+
+.hero-section {
+    height: 660px;
+    min-height: 0;
+    box-sizing: border-box;
+}

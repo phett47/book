@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        เก่งศัพท์ในชีวิตประจำวัน 3,000 คำ | ผ่านเรื่องหลอน
+    </title>
+
+        <!--ลิงก์ CSS ของ AOS ภาพเลื่อน-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts : Horror Book Theme -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Sriracha&family=Special+Elite&display=swap" rel="stylesheet">
+     
+
+    <!-- Font Awesome คลังไอคอนสำเร็จรูป -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS ของเรา -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+
+<body>
+
+    <!-- ผีลอย -->
+<img src="images/ผี.webp" class="floating-ghost ghost-left" alt="ผีตกแต่ง">
+
+<!-- ==================================================
+     SECTION 1 : NAVBAR
+================================================== -->
+
+<header class="navbar">
+
+     <div class="logo">
+        <a href="#home">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <nav class="menu">
+
+        <a href="#home">
+            หน้าหลัก
+        </a>
+
+        <a href="#purchase">
+            สั่งซื้อ
+        </a>
+
+        <a href="#audio">
+            เกี่ยวกับเรา
+        </a>
+
+        <a href="#suitable">
+            ตรวจสอบพัสดุ
+        </a>
+
+        <a href="#bibliography">
+            ทดสอบระดับภาษาอังกฤษ ฟรี!!
+        </a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <button class="login-btn">
+            Login
+        </button>
+
+        <button class="cart-btn">
+            🛒
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     SECTION 2 : หน้าเว็บ / HERO + 360°
+================================================== -->
+
+<section id="home" class="hero-section">
+
+
+    <div class="hero-content">
+
+        <!-- =========================
+             LEFT : HERO TEXT
+        ========================== -->
+
+        <div class="hero-text">
+
+            <!-- Tag -->
+            <div class="hero-tag">
+                HORROR ENGLISH • VOCABULARY
+            </div>
+
+            <!-- Title -->
+            <h1>
+                เก่งศัพท์ในชีวิตประจำวัน
+                <br>
+                <span>3,000 คำ</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <h2>
+                หนังสือเรียนรู้คำศัพท์ภาษาอังกฤษผ่านเรื่องราวชวนหลอน
+            </h2>
+
+
+            <!-- Author -->
+            <div class="hero-author">
+                จัดทำโดย สำนักพิมพ์ OpenDurian
+            </div>
+
+            <!-- Quote -->
+            <div class="hero-quote">
+
+                <span class="quote-mark">“</span>
+
+                <p>
+                    เปลี่ยนการจำคำศัพท์ธรรมดา
+                    ให้กลายเป็นเรื่องราวที่ทั้งสนุกและน่าจดจำ
+                </p>
+
+                <small>
+                    — เรียนรู้ผ่านเรื่องราว
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK PREVIEW -->
+
+    <div class="hero-book-preview">
+
+    <div class="preview-label">
+        BOOK PREVIEW
+    </div>
+
+    <div class="preview-line"></div>
+
+    <div class="preview-list">
+
+        <div class="preview-item">
+            <span>01</span>
+            <p>STORIES</p>
+        </div>
+
+        <div class="preview-item">
+            <span>02</span>
+            <p>VOCABULARY</p>
+        </div>
+
+        <div class="preview-item">
+            <span>03</span>
+            <p>LISTENING</p>
+        </div>
+
+        <div class="preview-item">
+            <span>04</span>
+            <p>TRANSLATION</p>
+        </div>
+
+    </div>
+
+</div>
+      
+
+
+        <!-- 360 DEGREE BOOK -->
+
+        <div class="hero-book">
+            
+            <div class="blood-circle"></div>
+
+            <div class="book360" id="book360">
+
+                <img
+                    id="book360Image"
+                    src="images/360/360-01.png"
+                    alt="หนังสือเก่งศัพท์ 3000 คำ"
+                    draggable="false"
+                >
+
+            </div>
+
+            <div class="rotate-text">
+                ลากเมาส์เพื่อหมุนหนังสือ 360°
+            </div>
+
+            <div class="rotate-buttons">
+
+                <button id="rotateLeft">
+                    ◀
+                </button>
+
+                <span>360°</span>
+
+                <button id="rotateRight">
+                    ▶
+                </button>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SECTION 3 : สั่งซื้อ
+================================================== -->
+
+<section id="purchase" class="purchase-section">
+
+    <div class="section-heading" data-aos="fade-up" data-aos-duration="900">
+
+        <span>01 — BOOK</span>
+
+        <h2>
+            เปิดหน้าหนังสือ...
+            ถ้าคุณกล้าพอ
+        </h2>
+
+    </div>
+
+
+    <div class="purchase-content" data-aos="fade-up" data-aos-duration="1100">
+
+
+        <!-- GALLERY -->
+
+        <div class="product-gallery" data-aos="fade-right" data-aos-duration="1000">
+
+            <div class="main-image-container">
+
+                <button
+                    id="prevImage"
+                    class="gallery-arrow left">
+                    ‹
+                </button>
+
+                <img
+                    id="mainProductImage"
+                    src="images/ปกหน้า.jpg"
+                    alt="หนังสือ"
+                    class="main-product-image"
+                >
+
+                <button
+                    id="nextImage"
+                    class="gallery-arrow right">
+                    ›
+                </button>
+
+                <button
+                    id="zoomButton"
+                    class="zoom-button">
+                    ⛶
+                </button>
+
+            </div>
+
+
+            <div class="thumbnail-wrapper">
+
+
+                <div
+                    class="thumbnail-list"
+                    id="thumbnailList">
+
+                    <img
+                        src="images/เนื้อหา1.webp"
+                        class="thumbnail active"
+                        data-image="images/เนื้อหา1.webp"
+                        alt="ปกหน้า"
+                    >
+
+                    <img
+                        src="images/เนื้อหา2.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา2.webp"
+                        alt="ปกหลัง"
+                    >
+
+                    <img
+                        src="images/เนื้อหา3.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา3.webp"
+                        alt="สันหนังสือ"
+                    >
+
+                    <img
+                        src="images/เนื้อหา4.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา4.webp"
+                        alt="รายละเอียด"
+                    >
+
+                        <img
+                        src="images/เนื้อหา5.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา5.webp"
+                        alt="รายละเอียด"
+                    >
+                        <img
+                        src="images/เนื้อหา6.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา6.webp"
+                        alt="รายละเอียด"
+                    >
+                        <img
+                        src="images/เนื้อหา7.webp"
+                        class="thumbnail"
+                        data-image="images/เนื้อหา7.webp"
+                        alt="รายละเอียด"
+                    >
+            
+
+
+                </div>
+
+              
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ORDER -->
+
+        <div class="order-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+
+            <div class="warning-title">
+
+                <div class="warning-symbol">
+                    ⊘
+                </div>
+
+                <div>
+                    <h2>
+                        หยุด!
+                    </h2>
+
+                    <p>
+                        ถ้าคุณเบื่อการท่องศัพท์
+                        แบบนกแก้วนกขุนทอง
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="order-card">
+
+                <div class="limited">
+                    SPECIAL OFFER
+                </div>
+
+                <p>
+                    สั่งซื้อได้ทันที !!!
+                </p>
+
+                <div class="price">
+                    189 บาท
+                </div>
+
+                <div class="old-price">
+                    <span>ลด 27%</span>
+                    <del>259 บาท</del>
+                </div>
+
+                <button class="buy-button">
+                    ซื้อเลย
+                </button>
+
+                <div class="shipping">
+                    🚚 ค่าจัดส่ง 0 บาท
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SECTION 4 : ตัวอย่างไฟล์เสียง
+================================================== -->
+<div class="story-background">
+
+<section id="audio" class="audio-section">
+
+    <div class="section-heading center" data-aos="fade-up" data-aos-duration="900">
+
+        <span>
+            02 — LISTEN
+        </span>
+
+        <h2>
+            ตัวอย่างเสียงจากเจ้าของภาษา
+        </h2>
+
+    </div>
+
+
+    <div class="audio-slider" data-aos="fade-up" data-aos-duration="1100">
+
+        <!-- ปุ่มย้อนกลับ -->
+
+       
+        <button
+         class="audio-arrow"
+         id="audioPrev"
+         type="button">
+          ‹
+        </button>
+
+
+        <div class="audio-card-wrapper">
+
+
+            <!-- =========================
+                 AUDIO ITEM 1
+            ========================== -->
+
+            <article class="audio-card active-audio">
+
+                <div class="audio-image">
+
+                    <img
+                        src="images/audio-01.png"
+                        alt="ตัวอย่างเรื่องที่ 1"
+                    >
+
+                </div>
+
+
+                <div class="audio-info">
+
+                    <span>
+                        STORY 01
+                    </span>
+
+                    <h3>
+                        The Only Rule
+                    </h3>
+
+                    <p>
+                        ตัวอย่างเรื่องสั้นสยองขวัญ
+                        ภาษาอังกฤษพร้อมคำแปล
+                    </p>
+
+                    <audio
+                        controls
+                        class="audio-player">
+
+                        <source
+                            src="audio/sample-01.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Browser ของคุณไม่รองรับ Audio
+
+                    </audio>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 AUDIO ITEM 2
+            ========================== -->
+
+            <article class="audio-card">
+
+                <div class="audio-image">
+
+                    <img
+                        src="images/audio-04.png"
+                        alt="ตัวอย่างเรื่องที่ 2"
+                    >
+
+                </div>
+
+
+                <div class="audio-info">
+
+                    <span>
+                        STORY 02
+                    </span>
+
+                    <h3>
+                        The Last Passenger
+                    </h3>
+
+                    <p>
+                        ฝึกฟังภาษาอังกฤษ
+                        ผ่านเรื่องราวชวนขนหัวลุก
+                    </p>
+
+                    <audio
+                        controls
+                        class="audio-player">
+
+                        <source
+                            src="audio/sample-04.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Browser ของคุณไม่รองรับ Audio
+
+                    </audio>
+
+                </div>
+
+                </article>
+
+            <!-- =========================
+                 AUDIO ITEM 3
+            ========================== -->
+
+            <article class="audio-card">
+
+                <div class="audio-image">
+
+                    <img
+                        src="images/audio-39.png"
+                        alt="ตัวอย่างเรื่องที่ 3"
+                    >
+
+                </div>
+
+
+                <div class="audio-info">
+
+                    <span>
+                        STORY 03
+                    </span>
+
+                    <h3>
+                        The Mirror
+                    </h3>
+
+                    <p>
+                        ตัวอย่างเรื่องสั้นสยองขวัญ
+                        ภาษาอังกฤษพร้อมคำแปล
+                    </p>
+
+                    <audio
+                        controls
+                        class="audio-player">
+
+                        <source
+                            src="audio/sample-39.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Browser ของคุณไม่รองรับ Audio
+
+                    </audio>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 AUDIO ITEM 4
+            ========================== -->
+
+            <article class="audio-card">
+
+                <div class="audio-image">
+
+                    <img
+                        src="images/audio-44.png"
+                        alt="ตัวอย่างเรื่องที่ 4"
+                    >
+
+                </div>
+
+
+                <div class="audio-info">
+
+                    <span>
+                        STORY 04
+                    </span>
+
+                    <h3>
+                        The Haunted House
+                    </h3>
+
+                    <p>
+                        ฝึกฟังภาษาอังกฤษ
+                        ผ่านเรื่องราวชวนขนหัวลุก
+                    </p>
+
+                    <audio
+                        controls
+                        class="audio-player">
+
+                        <source
+                            src="audio/sample-44.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Browser ของคุณไม่รองรับ Audio
+
+                    </audio>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- ปุ่มไปเรื่องถัดไป -->
+
+    
+        <button
+        class="audio-arrow"
+        id="audioNext"
+        type="button">
+        ›
+        </button>
+
+    </div>
+
+</section>
+
+
+             
+
+
+<!-- ==================================================
+     SECTION 5 : เหมาะกับใคร
+================================================== -->
+
+<section id="suitable" class="suitable-section">
+
+    <div class="section-heading center" data-aos="fade-up" data-aos-duration="900">
+
+        <span>
+            03 — WHO IS IT FOR?
+        </span>
+
+        <h2>
+            หนังสือเล่มนี้เหมาะกับใคร ?
+        </h2>
+
+    </div>
+
+  <div class="target-cards">
+
+
+        <!-- Card 01 -->
+        <div class="target-card"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        data-aos-delay="200">
+
+            <div class="card-icon">
+                ❓
+            </div>
+
+            <span class="card-number">
+                02
+            </span>
+
+            <h3>
+                จำศัพท์ไม่ได้
+            </h3>
+
+            <p>
+                เปลี่ยนการท่องจำแห้งๆ มาอ่านผ่านเรื่องราว
+            </p>
+
+        </div>
+
+
+        <!-- Card 02 -->
+        <div class="target-card"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        data-aos-delay="400">
+
+            <div class="card-icon">
+                📖
+            </div>
+
+            <span class="card-number">
+                03
+            </span>
+
+            <h3>
+                พื้นฐานน้อย
+            </h3>
+
+            <p>
+                เริ่มต้นจากศูนย์ มีคำแปลและอธิบายเข้าใจง่าย
+            </p>
+
+        </div>
+
+
+        <!-- Card 03 -->
+        <div class="target-card active"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        data-aos-delay="600">
+
+            <div class="card-icon">
+                👻
+            </div>
+
+            <span class="card-number">
+                04
+            </span>
+
+            <h3>
+                สายมู สายหลอน
+            </h3>
+
+            <p>
+                เรียนภาษาอังกฤษผ่านเรื่องสั้นสยองขวัญที่อ่านสนุก
+            </p>
+
+        </div>
+
+
+        <!-- Card 04 -->
+        <div class="target-card"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        data-aos-delay="800">
+
+            <div class="card-icon">
+                ⏳
+            </div>
+
+            <span class="card-number">
+                05
+            </span>
+
+            <h3>
+                มีเวลาน้อย
+            </h3>
+
+            <p>
+                แบ่งอ่านเป็นตอนสั้นๆ อ่านวันละนิดก็เก่งได้
+            </p>
+
+        </div>
+        
+    </div>
+
+</section>
+
+</div>
+
+
+
+<!-- ==================================================
+     SECTION 6 : ข้อมูลบรรณานุกรม
+================================================== -->
+
+<section id="bibliography" class="bibliography-section">
+
+    <div class="bibliography-inner" data-aos="fade-up" data-aos-duration="1000">
+
+        <div class="bibliography-title" data-aos="fade-right" data-aos-duration="1000">
+
+            <span>
+                04 — BOOK DATA
+            </span>
+
+            <h2>
+                ข้อมูลบรรณานุกรม
+            </h2>
+
+            <p>
+                รายละเอียดของหนังสือ
+            </p>
+
+            <img src="images/d2.png" 
+            alt="ปกหลังหนังสือ" 
+            class="back-cover"
+            data-aos="fade-right" 
+            data-aos-duration="2000" 
+            data-aos-delay="200">
+
+        </div>
+
+
+        <div class="bibliography-data" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+
+                <span>
+                    ชื่อเรื่อง
+                </span>
+
+                <strong>
+                    เก่งศัพท์ในชีวิตประจำวัน 3,000 คำ
+                    จำง่าย ผ่านเรื่องหลอน
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+
+                <span>
+                    ผู้เขียน
+                </span>
+
+                <strong>
+                    บริษัท โอเพ่นดูเรียน จำกัด
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+
+                <span>
+                    ISBN
+                </span>
+
+                <strong>
+                    9786168379806
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+
+                <span>
+                    จำนวนหน้า
+                </span>
+
+                <strong>
+                    288 หน้า
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+
+                <span>
+                    ขนาด
+                </span>
+
+                <strong>
+                    105 × 145 × 15 มม.
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+
+                <span>
+                    น้ำหนัก
+                </span>
+
+                <strong>
+                    170 กรัม
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
+
+                <span>
+                    เนื้อใน
+                </span>
+
+                <strong>
+                    พิมพ์ขาวดำ
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+
+                <span>
+                    กระดาษ
+                </span>
+
+                <strong>
+                    กระดาษถนอมสายตา
+                </strong>
+
+            </div>
+
+
+            <div class="data-row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+
+                <span>
+                    สำนักพิมพ์
+                </span>
+
+                <strong>
+                    โอเพ่นดูเรียน, บจก.
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SECTION 7 : HIGHLIGHTS
+================================================== -->
+
+<section class="highlights-section" data-aos="fade-up" data-aos-duration="900">
+
+    <div class="section-heading center" data-aos="fade-up" data-aos-duration="900">
+
+        <span>
+            05 — WHY THIS BOOK?
+        </span>
+
+        <h2>
+            ทำไมต้องเล่มนี้?
+        </h2>
+
+    </div>
+
+
+    <div class="highlight-grid">
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="0">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                50 เรื่องสั้นสยองขวัญ
+            </h3>
+
+            <p>
+                อ่านภาษาอังกฤษควบคู่กับภาษาไทย
+                พร้อมคำอ่าน
+            </p>
+
+        </div>
+
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="150">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                เสียงจากเจ้าของภาษา
+            </h3>
+
+            <p>
+                ฝึก Listening และ Pronunciation
+                ผ่านไฟล์เสียง
+            </p>
+
+        </div>
+
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Oxford 3,000 Keywords
+            </h3>
+
+            <p>
+                คำศัพท์พื้นฐานที่ต้องรู้
+                เรียง A-Z
+            </p>
+
+        </div>
+
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="450">
+
+            <span>
+                04
+            </span>
+
+            <h3>
+                กริยา 3 ช่อง + Collocations
+            </h3>
+
+            <p>
+                เพิ่มคลังศัพท์สำหรับการสอบ
+                และการทำงาน
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SECTION 8 : FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main" data-aos="fade-up" data-aos-duration="900">
+
+        <div class="footer-logo" data-aos="fade-right" data-aos-duration="800">
+
+            <img src="images/logo.png" alt="Open Durian">
+
+            <p>เปลี่ยนความกลัว ให้กลายเป็นความรู้</p>
+
+        </div>
+
+
+        <div class="footer-social" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+
+    <span>
+        FOLLOW US
+    </span>
+
+    <div class="social-icons">
+
+        <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="LINE">
+            <i class="fa-brands fa-line"></i>
+        </a>
+
+    </div>
+
+</div>
+       
+        
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Horror English Book
+        </span>
+
+        <span>
+            Privacy Policy
+        </span>
+
+        <span>
+            Terms of Service
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+
+<!-- ==================================================
+     IMAGE MODAL
+================================================== -->
+
+<div
+    id="imageModal"
+    class="image-modal">
+
+    <button
+        id="modalClose"
+        class="modal-close">
+        ×
+    </button>
+
+    <img
+        id="modalImage"
+        src=""
+        alt="รูปหนังสือขยาย"
+    >
+
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  // AOS ใช้เฉพาะเอฟเฟ็กต์ตอนเลื่อนหน้าเว็บ ไม่แตะระบบหมุนหนังสือ/แกลเลอรี/เสียงเดิม
+  AOS.init({
+    duration: 900,
+    easing: "ease-out-cubic",
+    once: true,
+    mirror: false,
+    offset: 80,
+    anchorPlacement: "top-bottom"
+  });
+</script>
+
+<!-- JavaScript ของเรา -->
+<script src="script.js"> </script>
+
+</body>
+</html>
+
